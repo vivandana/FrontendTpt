@@ -1,0 +1,74 @@
+Notes Day-1
+--------------------------------------------------------------------
+Types of tags in HTML
+<tag></tag> -- container tag
+<img/> -- self closing tag
+Attribute -- 
+<tag attribute="value" attribute="value"></tag>
+---------------------------------------------------------------------
+<link/>
+href="location/fileanme.ext"
+rel="stylesheet" --  (external css)
+rel="icon" -- (favicon)
+-----------------------------------------------------------------------
+for duplicate line
+Alt+shift+down arr / up arr
+-----------------------------------------------------------------------------
+Basics tags
+----------------------------
+1- <font></font> //use for text
+color //change text color
+size //change font size //value = 0-9
+face //change text style
+
+2 - <p></p> // use for paragraph
+block level tag
+define paragraph using this tag
+
+3- <b></b> / <strong></strong>
+use for bold content
+
+4- <i></i> / <em></em>
+use for italic
+
+5- <u></u>
+use for underline
+
+6- <mark></mark>
+use for highlight any word,line,or something imp
+
+7- <big></big>
+use for show content big from usual size..
+
+8- <small></small>
+use for show small text from usual text.
+
+
+9- <abbr></abbr> //use for show some extra info when mouse hover on that text.. msgg will show in tooltip box
+title = attribute of abbr
+
+10- <s></s>/<strike></strike>/<del></del>
+for apply hr line on words that shiw some discounted price after discount...
+
+11- <pre></pre>
+for print as it as component
+
+12- <xmp></xmp>
+for print o/p with tags
+
+13- <img/>
+src=""   //there are 5 attribute of img tag
+alt=""
+height=""
+title=""
+width=""
+---------------------------------------------------------Special character
+1- &nbsp; -- non breaking space 
+use for increase space 
+some special character:-  
+ &uArr; &ensp;&dArr; &nesim;&copf; &vangrt;&aacute; &varr;&abreve;&ac;&acd; &vartriangleright;&acE; &ncy;&acirc; &copy;&larr;&rarr;&reg;&range;&rect;&circ;&circledcirc;&check;&natural; &Nacute;&Aacute; &Zacute;
+
+
+
+ --------------------------------------------------------
+ Class Task -- 
