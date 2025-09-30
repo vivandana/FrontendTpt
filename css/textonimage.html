@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text on immage</title>
+    <style>
+           .outer{
+        height: 500px;
+        width: 1000px;
+        /* background-color: red; */
+        margin: 100px auto;
+        line-height: 500px;
+        font-size: 150px;
+        text-align: center;
+        background-image: url(AdobeStock_1235550755_Preview.jpeg);
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        background-size: 100% 100%;
+        color: white;
+
+    }
+    .outer:hover{
+        background-image: url("imgs.jpg");
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        background-size: 100% 100%;
+    }
+
+    .a{
+        background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)) ,
+      url('imgs.jpg');
+      height: 500px;
+      width: 500px;
+    }
+    </style>
+ 
+</head>
+<body>
+    <div class="outer">Techpile
+    <!-- <img src="AdobeStock_1235550755_Preview.jpeg" alt=""> -->
+    </div>
+
+
+
+    <div class="a"></div>
+</body>
+</html>

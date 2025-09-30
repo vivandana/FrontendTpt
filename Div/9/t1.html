@@ -1,0 +1,393 @@
+<html>
+    <head>
+        <title>Ludo</title>
+        <style>
+            .mid{
+                 width: 300px;
+            height: 150px;
+            box-sizing: border-box;
+            border: 75px solid;
+            border-color: yellow rgb(72, 224, 72) rgb(33, 129, 198) red;
+            }
+            #box
+            {
+                height: 750px;
+                width: 750px;
+                background: black;
+            }
+            .row
+            {
+                height: 300px;
+                width: 750px;
+                background-color: gray;
+            }
+            .col
+            {
+                height: 300px;
+                width: 300px;
+                background: red;
+                float: left;
+            }
+            .c1
+            {
+                height: 300px;
+                width: 150px;
+                background: yellow;
+                float: left;
+            }
+            .c2
+            {
+                height: 150px;
+                width: 300px;
+                background: rgb(0, 255, 238);
+                float: left;
+            }
+            .c3
+            {
+                height: 300px;
+                width: 50px;
+                background:green;
+                float: left;
+            }
+            .a
+            {
+                height: 50px;
+                width: 50px;
+                background: white;
+                border: 1px solid black;
+                box-sizing: border-box;
+            }
+            .b
+            {
+                height: 50px;
+                width: 50px;
+                border: 1px solid black;
+                box-sizing: border-box;
+            }
+            .c
+            {
+                height: 50px;
+                width: 300px;
+                background: rgb(46, 44, 44);
+            }
+            .d
+            {
+                height: 50px;
+                width: 50px;
+                border: 1px solid black;
+                background: white;
+                float: left;
+                box-sizing: border-box;
+            }
+            .e
+            {
+                height: 50px;
+                width: 50px;
+                border: 1px solid black;
+                float: left;
+                box-sizing: border-box;
+            }
+            .col1
+            {
+                height: 300px;
+                width: 60px;
+                float: left;
+                background: red;
+            }
+            .col11
+            {
+                height: 60px;
+                width: 180px;
+                background-color: red;
+            }
+            .x
+            {
+                height: 300px;
+                width: 60px;
+                background: rgb(33, 129, 198);
+                float: left;
+            }
+            .y
+            {
+                height: 60px;
+                width: 180px;
+                background: rgb(33, 129, 198);
+            }
+            .qq
+            {
+                background: gray;
+                height: 180px;
+                width:60px;
+                float: left;
+            }
+            .ww
+            {
+                background: white;
+                height: 180px;
+                width: 20px;
+                float: left;
+            }
+            .ee
+            {
+                background: red;
+                height: 180px;
+                width: 40px;
+                float: left;
+            }
+            .rr
+            {
+                background: white;
+                height: 20px;
+                width: 40px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <div class="row">
+                <div class="col">
+                    <div class="col1"></div>
+                    <div class="col1" style="background: white;width: 180px;">
+                        <div class="col11"></div>
+                        <div class="col11" style="background: white; height: 180px;">
+                            <div class="qq">
+                                <div class="ww"></div>
+                                <div class="ee">
+                                    <div class="rr"></div>
+                                    <div class="rr" style="background:red ;height: 48px;"></div>
+                                    <div class="rr" style="height: 44px;"></div>
+                                    <div class="rr" style="background:red ;height: 48px;"></div>
+                                    <div class="rr"></div>
+                                </div>
+                            </div>
+                            <div class="qq" style="background: white;"></div>
+                            <div class="qq">
+                                
+                                <div class="ee">
+                                    <div class="rr"></div>
+                                    <div class="rr" style="background:red ;height: 48px;"></div>
+                                    <div class="rr" style="height: 44px;"></div>
+                                    <div class="rr" style="background:red ;height: 48px;"></div>
+                                    <div class="rr"></div>
+                                </div>
+                                <div class="ww"></div>
+                            </div>
+                        </div>
+                        <div class="col11"></div>
+                    </div>
+                    <div class="col1"></div>
+                </div>
+                <div class="c1">
+                    <div class="c3">
+                        <div class="a"></div>
+                        <div class="a"></div>
+                        <div class="a"></div>
+                        <div class="a"></div>
+                        <div class="a"></div>
+                        <div class="a"></div>
+                    </div>
+                    <div class="c3" style="background: yellow;">
+                        <div class="b" style="background: white;"></div>
+                        <div class="b"></div>
+                        <div class="b"></div>
+                        <div class="b"></div>
+                        <div class="b"></div>
+                        <div class="b"></div>
+                    </div>
+                    <div class="c3">
+                        <div class="a" ></div>
+                        <div class="a" style="background: yellow;"></div>
+                        <div class="a"></div>
+                        <div class="a"></div>
+                        <div class="a"></div>
+                        <div class="a"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col1" style="background: yellow;"></div>
+                    <div class="col1" style="background: white;width: 180px;">
+                        <div class="col11" style="background: yellow;"></div>
+                        <div class="col11" style="background: white; height: 180px;">
+                            <div class="qq">
+                                <div class="ww"></div>
+                                <div class="ee">
+                                    <div class="rr"></div>
+                                    <div class="rr" style="background:yellow ;height: 48px;"></div>
+                                    <div class="rr" style="height: 44px;"></div>
+                                    <div class="rr" style="background:yellow;height: 48px;"></div>
+                                    <div class="rr"></div>
+                                </div>
+                            </div>
+                            <div class="qq" style="background: white;"></div>
+                            <div class="qq">
+                                
+                                <div class="ee">
+                                    <div class="rr"></div>
+                                    <div class="rr" style="background:yellow ;height: 48px;"></div>
+                                    <div class="rr" style="height: 44px;"></div>
+                                    <div class="rr" style="background:yellow ;height: 48px;"></div>
+                                    <div class="rr"></div>
+                                </div>
+                                <div class="ww"></div>
+                            </div>
+                        </div>
+                        <div class="col11" style="background: yellow;"></div>
+                    </div>
+                    <div class="col1" style="background: yellow;"></div>
+                </div>
+            </div>
+            <div class="row" style="height: 150px;background: purple;">
+                <div class="c2"> 
+                    <div class="c">
+                        <div class="d"></div>
+                        <div class="d" style="background: red;"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                    </div>
+                    <div class="c" style="background: red;">
+                        <div class="e" style="background: white;"></div>
+                        <div class="e"></div>
+                        <div class="e"></div>
+                        <div class="e"></div>
+                        <div class="e"></div>
+                        <div class="e"></div>
+                    </div>
+                    <div class="c">
+                        <div class="d"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                        <div class="d"></div>
+                    </div>
+                </div>
+                <div class="c2 mid" style="width: 150px;"></div>
+                <div class="c2">
+                    <div class="c2"> 
+                        <div class="c">
+                            <div class="d"></div>
+                            <div class="d"></div>
+                            <div class="d"></div>
+                            <div class="d"></div>
+                            <div class="d"></div>
+                            <div class="d"></div>
+                        </div>
+                        <div class="c" style="background:rgb(72, 224, 72);">
+                            <div class="e"></div>
+                            <div class="e"></div>
+                            <div class="e"></div>
+                            <div class="e"></div>
+                            <div class="e"></div>
+                            <div class="e" style="background: white;"></div>
+                        </div>
+                        <div class="c">
+                            <div class="d"></div>
+                            <div class="d"></div>
+                            <div class="d"></div>
+                            <div class="d"></div>
+                            <div class="d" style="background:rgb(72, 224, 72);"></div>
+                            <div class="d"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="x"></div>
+                    <div class="x" style="background: white;width: 180px;">
+                        <div class="y"></div>
+                        <div class="y" style="background: white;height: 180px;">
+                            <div class="qq">
+                                <div class="ww"></div>
+                                <div class="ee">
+                                    <div class="rr"></div>
+                                    <div class="rr" style="background:rgb(33, 129, 198);height: 48px;"></div>
+                                    <div class="rr" style="height: 44px;"></div>
+                                    <div class="rr" style="background:rgb(33, 129, 198);height: 48px;"></div>
+                                    <div class="rr"></div>
+                                </div>
+                            </div>
+                            <div class="qq" style="background: white;"></div>
+                            <div class="qq">
+                                
+                                <div class="ee">
+                                    <div class="rr"></div>
+                                    <div class="rr" style="background:rgb(33, 129, 198);height: 48px;"></div>
+                                    <div class="rr" style="height: 44px;"></div>
+                                    <div class="rr" style="background:rgb(33, 129, 198);height: 48px;"></div>
+                                    <div class="rr"></div>
+                                </div>
+                                <div class="ww"></div>
+                            </div>
+                        </div>
+                        <div class="y"></div>
+                    </div>
+                    <div class="x"></div>
+                </div>
+                <div class="c1">
+                    <div class="c3">
+                        <div class="a"></div>
+                        <div class="a"></div>
+                        <div class="a"></div>
+                        <div class="a"></div>
+                        <div class="a" style="background:rgb(33, 129, 198);"></div>
+                        <div class="a"></div>
+                    </div>
+                    <div class="c3" style="background: rgb(33, 129, 198);">
+                        <div class="b" ></div>
+                        <div class="b"></div>
+                        <div class="b"></div>
+                        <div class="b"></div>
+                        <div class="b" ></div>
+                        <div class="b"  style="background: white;"></div>
+                    </div>
+                    <div class="c3">
+                        <div class="a" ></div>
+                        <div class="a"></div>
+                        <div class="a"></div>
+                        <div class="a"></div>
+                        <div class="a" ></div>
+                        <div class="a"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col1" style="background: rgb(72, 224, 72);"></div>
+                    <div class="col1" style="background: white;width: 180px;">
+                        <div class="col11" style="background: rgb(72, 224, 72);"></div>
+                        <div class="col11" style="background: white; height: 180px;">
+                            <div class="qq">
+                                <div class="ww"></div>
+                                <div class="ee">
+                                    <div class="rr"></div>
+                                    <div class="rr" style="background:rgb(72, 224, 72);height: 48px;"></div>
+                                    <div class="rr" style="height: 44px;"></div>
+                                    <div class="rr" style="background:rgb(72, 224, 72);height: 48px;"></div>
+                                    <div class="rr"></div>
+                                </div>
+                            </div>
+                            <div class="qq" style="background: white;"></div>
+                            <div class="qq">
+                                
+                                <div class="ee">
+                                    <div class="rr"></div>
+                                    <div class="rr" style="background:rgb(72, 224, 72);height: 48px;"></div>
+                                    <div class="rr" style="height: 44px;"></div>
+                                    <div class="rr" style="background:rgb(72, 224, 72);height: 48px;"></div>
+                                    <div class="rr"></div>
+                                </div>
+                                <div class="ww"></div>
+                            </div>
+                        </div>
+                        <div class="col11" style="background: rgb(72, 224, 72);"></div>
+                    </div>
+                    <div class="col1" style="background:rgb(72, 224, 72);"></div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

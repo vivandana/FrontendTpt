@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-1</title>
+    <!-- syntax of internal css -->
+     <style>
+        /*  Internal CSS -- Tag Selector */
+        h1{
+            color: lightgoldenrodyellow;
+            background-color: lightgreen;
+            border-width: 2px;
+            border-style: dotted;
+            border-color:lightskyblue;
+            /* border: 2px solid lightcoral ; */
+            /* border: 2px dotted lightcoral ; */
+            /* border: 2px double lightcoral ; */
+            /* border: 2px dashed lightcoral ; */
+            /* border: 2px groove lightcoral ; */
+            text-align: center;
+            /* text-align: left;
+            text-align: right; */
+        }
+        p{
+            color: rgb(173, 165, 165);
+            border: 3px double dodgerblue;
+        }
+        /* ID selector */
+        #a{
+            color: ghostwhite;
+            background-color: black;
+            border: none;
+            text-align: left;
+        }
+        #b{
+            color: ghostwhite;
+            background-color: red;
+            border: none;
+            text-align: left;
+        }
+
+        /* Group Selector */
+        #c, #d{
+            background-color: darkseagreen;
+             color: ghostwhite;
+             border: none;
+            text-align: left;
+        }
+     </style>
+</head>
+<body>
+    <hr>
+<center><h2>TAG Selector</h2></center>
+<hr>
+    <h1>This is Heading</h1>
+    <H1>This is Heading</H1>
+    <p>This is Para</p>
+    <P>This is Para</P>
+
+<hr>
+<center><h2>ID Selector</h2></center>
+<hr>
+<h2 id="a">Code Helper</h2>
+    <h1 id="b">Code Helper</h1>
+    <hr>
+<center><h2>Group Selector</h2></center>
+<hr>
+    <h1  id="c">Code Helper</h1>
+    <h1  id="d">Code Helper</h1>
+    
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    max-width: 900px;
+    overflow: hidden;
+}
+
+.image-section img {
+    width: 400px;
+    object-fit: cover;
+}
+
+.registration-form {
+    padding: 30px;
+    flex: 1;
+}
+
+.registration-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.registration-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.registration-form input,
+.registration-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.gender-options {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.reset-btn {
+    background-color: #ccc;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #FF5722;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    background-color: #b3b3b3;
+}
+
+.submit-btn:hover {
+    background-color: #e64a19;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="image-section">
+            <img src="github.avif" alt="Students using tablet">
+        </div>
+
+        <form class="registration-form">
+            <h2>STUDENT REGISTRATION FORM</h2>
+
+            <label>Name :</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Father Name :</label>
+            <input type="text" placeholder="Enter father's name" required>
+
+            <label>Address :</label>
+            <input type="text" placeholder="Enter address" required>
+
+            <label>Gender :</label>
+            <div class="gender-options">
+                <label><input type="radio" name="gender" value="male" checked> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </div>
+
+            <label>State :</label>
+            <select>
+                <option value="">Select State</option>
+                <option value="state1">State 1</option>
+                <option value="state2">State 2</option>
+            </select>
+
+            <label>City :</label>
+            <select>
+                <option value="">Select City</option>
+                <option value="city1">City 1</option>
+                <option value="city2">City 2</option>
+            </select>
+
+            <label>DOB :</label>
+            <input type="date" required>
+
+            <label>Pincode :</label>
+            <input type="text" placeholder="Enter pincode" required>
+
+            <label>Course :</label>
+            <select>
+                <option value="">Select Course</option>
+                <option value="course1">Course 1</option>
+                <option value="course2">Course 2</option>
+            </select>
+
+            <label>Email ID :</label>
+            <input type="email" placeholder="Enter email" required>
+
+            <div class="form-buttons">
+                <input type="reset" value="Reset All" class="reset-btn">
+                <input type="submit" value="Submit Form" class="submit-btn">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

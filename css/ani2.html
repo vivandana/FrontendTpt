@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ani2</title>
+    <style>
+        div{
+            height: 50px;
+            width: 200px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 50px;
+            position: absolute;
+            animation: abc 5s;
+            animation-iteration-count: infinite;
+            animation-play-state: paused;
+
+        }
+        .a1{
+            background-color: violet;
+            animation: abc 5s linear infinite alternate;
+        }
+          .a2{
+            background-color: gainsboro;
+            top: 50px;
+            animation: abc 5s ease infinite alternate;
+
+        }
+          .a3{
+            background-color: gold;
+            top: 100px;
+            animation: abc 5s ease-in infinite alternate;
+
+
+        }
+          .a4{
+            background-color: goldenrod;
+            top: 150px;
+            animation: abc 5s ease-out infinite alternate;
+
+
+        }
+          .a5{
+            background-color: green;
+            top: 200px;
+            animation: abc 5s ease-in-out infinite alternate;
+
+
+        }
+          .a6{
+            background-color: blueviolet;
+            top: 250px;
+            animation: abc 5s steps(5) infinite alternate;
+
+
+        }
+        @keyframes abc {
+            from{
+                right: 0px;
+            }
+            to{
+                right: 100px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="a1">Linear</div>
+    <div class="a2">Ease</div>
+    <div class="a3">Ease-in</div>
+    <div class="a4">Ease-out</div>
+    <div class="a5">Ease-in-out</div>
+    <div class="a6">Steps</div>
+</body>
+</html>

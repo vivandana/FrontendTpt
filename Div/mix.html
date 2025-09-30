@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>use margin,padding,border</title>
+    <style>
+        #outer{
+            height: 800px;
+            width: 1200px;
+            background-color: gray;
+            padding: 150px;
+            box-sizing: border-box;
+        }
+        .row{
+            height:250px ;
+            width: 900px;
+            background-color: white;
+        }
+        .col{
+            height: 230px;
+            width: 280px;
+            background-color: palegoldenrod;
+            float: left;
+            border: groove 5px olive;
+            box-sizing:border-box;
+            margin: 10px;
+        }
+        .div{
+            height: 50px;
+            width: 50px;
+            border-top: 50px solid red;
+            border-right: 50px solid green;
+            border-bottom: 50px solid blue;
+            border-left: 50px solid yellow;
+            box-sizing: border-box;
+        }
+        .colorful {
+            width: 25px;
+            height: 25px;
+            border: 25px solid;
+            border-color: red green blue orange;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+<hr>
+
+<br><br>
+<div class="div"></div>
+ <br><br>
+<div class="colorful"></div>

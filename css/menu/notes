@@ -1,0 +1,14 @@
+navigation | menu
+overflow-x
+overflow-y
+overflow: visible scroll hidden auto
+=============================
+Details & summary tags
+<details>
+<summary>wfbe3u </summary>
+<p>hvsdu2ytr</p>
+</details>
+---------------------------------------
+background-clip: clip-border-box(default value (border+padding+content)) | padding-box(padding+content) | content-box(content) | text
+-------------------------------------------
+text-decoration : underline, overlline,none,line-through

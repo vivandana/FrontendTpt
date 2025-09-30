@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <style>
+        body{
+            background: url('imgs.jpg');
+            background-size: cover;
+        }
+        nav{
+            height: 50px;
+            width: 1000px;
+            background: rgba(179, 173, 173, 0.5);
+            margin: auto;
+            backdrop-filter: blur(10px);
+            border: 1px solid whitesmoke;
+            box-shadow: 0px 0px 10px 5px white inset;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+/* child selector */
+       nav  ul{
+            list-style-type: none;
+            
+        }
+       nav  ul a{
+            text-decoration: none;
+            color: white;
+            float: left;
+            transform: translateY(-10px);
+           
+        
+        }
+
+        nav ul  li{
+         height: 40px;
+         width: 120px;
+         /* background: red; */
+            line-height: 40px;
+            /* border: 1px solid white; */
+            text-align: center;
+            margin-right: 4px;
+        }
+
+        nav ul a li:hover{
+            color: greenyellow;
+            cursor: pointer;
+            transition: 0.5s;
+            transform: scale(2);
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+
+        <ul>
+            <!-- # call current page -->
+             <!-- li is block level element -->
+             <a href="#"><li>Home</li></a>
+             <a href="#"><li>About</li></a>
+             <a href="#"><li>Contact</li></a>
+             <a href="#"><li>Register</li></a>
+             <a href="#"><li>Services</li></a>
+             <a href="#"><li>Gallery</li></a>
+             <a href="#"><li>Login</li></a>
+
+        </ul>
+
+    </nav>
+</body>
+</html>

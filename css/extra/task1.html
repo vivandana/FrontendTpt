@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form1</title>
+    <style>
+        body{
+            background-color: blue;
+        }
+        .outer{
+            height: 500px;
+            width: 600px;
+            background-color: blanchedalmond;
+            margin: 100px auto;
+        }
+        .left{
+             height: 500px;
+            width: 300px;
+            background-color: skyblue;
+            float: left;
+            padding-top: 100px;
+            padding-left: 30px;
+            padding-right: 30px;
+            box-sizing: border-box;
+           text-align: center;
+           }
+        .right{
+              height: 500px;
+            width: 300px;
+            background-color: white;
+            float: left;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        .h1{
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+        input{
+            height: 50px;
+            width: 200px;
+            border: none;
+            background-color: gainsboro;
+            margin: 5px;
+        }
+        textarea{
+              height: 50px;
+            width: 200px;
+            border: none;
+            background-color: gainsboro;
+            margin: 5px;
+        }
+        ::placeholder{
+            padding-left: 15px;
+        }
+        .btn{
+            height: 50px;
+            width: 100px;
+            border-radius: 30px;
+            background-color: skyblue;
+            text-align: center;
+           margin: 10px;
+           margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="left">
+            <h1 class="h1">Let's Chat</h1>
+            <p style="color: white; font-weight: bold;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit hic quibusdam vero </p>
+            <p  style="color: white; font-weight: bold;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, eos.</p>
+        </div>
+        <div class="right">
+            <h1 style="text-align: center;">Contact</h1>
+            <input type="text" placeholder="Name" required> <br>
+            <input type="text" placeholder="Email" required> <br>
+            <input type="text" placeholder="Password" required> <br>
+            <input type="text" placeholder="Phone" required> <br>
+            <textarea name="" id="" placeholder="Message" style="resize: none;"></textarea>
+            <input type="submit" value="submit" class="btn">
+        </div>
+    </div>
+</body>
+</html>

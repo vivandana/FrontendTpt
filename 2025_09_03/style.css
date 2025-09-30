@@ -1,0 +1,89 @@
+h1 {
+  color: darkblue;
+  font-size: 40px;
+  text-align: center;
+}
+
+p.external1 {
+  color: red;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+h4 {
+  letter-spacing: 3px;
+  color: orange;
+  font-size: 22px;
+}
+
+
+p.external2 {
+  font-size: 16px;
+  line-height: 2;
+  color: darkgreen;
+}
+
+
+
+h1.ext14 {
+  color: purple;
+  font-size: 36px;
+  text-align: center;
+}
+
+
+p.ext17 {
+  font-size: 18px;
+  font-weight: bold;
+  color: navy;
+}
+
+
+h4.ext20 {
+  border: 2px solid blue;
+  background-color: lightyellow;
+  text-align: center;
+}
+
+
+p.ext23 {
+  border: 1px solid black;
+  word-spacing: 15px;
+  color: #444;
+}
+
+
+h1.ext26 {
+  color: red;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+
+p.ext29 {
+  border: 2px inset black;
+  letter-spacing: 2px;
+  padding: 10px;
+}
+
+
+p.ext31 {
+  color: darkred;
+  font-size: 18px;
+  text-align: justify;
+}
+
+
+h2.ext32 {
+  background-color: lightgreen;
+  border: 2px solid black;
+  text-align: center;
+}
+
+
+h4.ext33 {
+  font-style: italic;
+  color: navy;
+  letter-spacing: 3px;
+}

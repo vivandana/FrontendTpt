@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #00c6ff, #ff00cc);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      width: 350px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .social-login {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .social-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .social-btn img {
+      height: 18px;
+      margin-right: 8px;
+    }
+
+    .facebook {
+      background: #1877f2;
+      color: #fff;
+      border: none;
+    }
+
+    .google {
+      background: #fff;
+      color: #444;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .login-box .forgot {
+      font-size: 12px;
+      text-align: right;
+      display: block;
+      margin: -5px 0 10px;
+      color: #555;
+      text-decoration: none;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      background: #333;
+      border: none;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-box button:hover {
+      background: #555;
+    }
+
+    .signup {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .signup a {
+      text-decoration: none;
+      color: #1877f2;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Sign In With</h2>
+    <div class="social-login">
+      <div class="social-btn facebook">
+         Facebook
+      </div>
+      <div class="social-btn google">
+       Google
+      </div>
+    </div>
+
+    <form>
+        
+      <input type="text" placeholder="Username" required>
+      <a href="#" class="forgot">Forgot?</a>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Sign In</button>
+    </form>
+
+    <p class="signup">Not a member? <a href="#">Sign up now</a></p>
+  </div>
+</body>
+</html>

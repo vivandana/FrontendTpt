@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-clip</title>
+    <style>
+        div{
+            height: 500px;width: 900px;
+            background: red;
+            margin: 60px auto;
+            font-size: 250px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 500px;
+            /* color: white; */
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            /* background: conic-gradient( red, blue, green, yellow,red); */
+            /* background: linear-gradient(45deg, rgba(92, 230, 142, 0.1), rgba(242, 218, 146, 0.1), rgba(192, 105, 131, 0.1), rgba(183, 220, 175, 0.1),rgba(196, 120, 185, 0.1)),url('../imgs.jpg'); */
+            background: url('imgs.jpg');
+            background-size: cover;
+            /* border: 20px aqua dashed; */
+
+            /* -webkit is for chrome browser */
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: animate 5s linear infinite;
+        }
+
+        @keyframes animate {
+            0%{
+                background: url('AdobeStock_1235550755_Preview.jpeg');
+            background-size: cover;
+             -webkit-text-fill-color: transparent;
+            background-clip: text;
+
+            }
+            50%{
+                 background: url('imgs.jpg');     
+                  -webkit-text-fill-color: transparent;
+            background-clip: text; 
+            }
+            100%{
+                 background: url('AdobeStock_919555443_Preview.jpeg');
+            background-size: cover;
+             -webkit-text-fill-color: transparent;
+            background-clip: text;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>Techpile</div>
+</body>
+</html>

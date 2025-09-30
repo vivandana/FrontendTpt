@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer{
+            height: 200px;
+            width: 800px;
+            border: 2px solid black;
+            display: flex;
+            /* flex-flow: column-reverse; */
+            /* flex-flow: row wrap; */
+            /* align-content: space-evenly; */
+            /* justify-content: space-evenly; */
+            column-gap: 30px;
+            /* flex-grow:unset; */
+        }
+        div{
+            height: 150px;
+            width: 150px;
+            border: 1px solid red;
+
+
+        }
+        .box1{
+            background-color: purple;
+            order: 1;
+            /* column-gap: 2px; */
+            /* flex-grow: 1; */
+            /*  */
+            flex-shrink: 2;
+        }
+        .box2{
+            background-color: plum;
+            order: 3;
+            /* flex-grow: 2; */
+            flex-shrink: 3;
+        }
+        .box3{
+            background-color: pink;
+            order: 2;
+            flex-shrink: 4;
+        }
+        .box4{
+            background-color: orangered;
+            order: 4;
+            flex-shrink: 5;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Appointment Form</title>
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('adobe.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.appointment-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.appointment-form input,
+.appointment-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.checkbox-label a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.checkbox-label a:hover {
+    text-decoration: underline;
+}
+
+.appointment-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.appointment-form button:hover {
+    background-color: #0056b3;
+}
+
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="appointment-form">
+            <h2>EDUCATION APPOINTMENT FORM</h2>
+
+            <input type="text" placeholder="Title" required>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone Number" required>
+
+            <select required>
+                <option value="">Course Type</option>
+                <option value="science">Science</option>
+                <option value="commerce">Commerce</option>
+                <option value="arts">Arts</option>
+            </select>
+
+            <label><strong>How would you like to be located?</strong></label>
+            <select required>
+                <option value="">By Phone</option>
+                <option value="email">By Email</option>
+                <option value="in-person">In-person</option>
+            </select>
+
+            <label><strong>Hours: 8am - 10pm</strong></label>
+            <select required>
+                <option value="">Select Time</option>
+                <option value="8am-10am">8am - 10am</option>
+                <option value="10am-12pm">10am - 12pm</option>
+                <option value="12pm-2pm">12pm - 2pm</option>
+                <option value="2pm-4pm">2pm - 4pm</option>
+                <option value="4pm-6pm">4pm - 6pm</option>
+                <option value="6pm-8pm">6pm - 8pm</option>
+                <option value="8pm-10pm">8pm - 10pm</option>
+            </select>
+
+            <!-- <label class="checkbox-label">
+              
+            </label> -->
+              <!-- <input type="checkbox" required  style="text-align: left;"> -->
+              I agree to the <a href="#">Terms and Conditions</a>
+
+            <button type="submit">Request an Appointment</button>
+        </form>
+    </div>
+</body>
+
+</html>

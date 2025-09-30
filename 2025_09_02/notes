@@ -1,0 +1,117 @@
+table
+------------------------
+table
+thead
+tbody
+tr
+th 
+td 
+tfoot
+caption
+----------------
+attribute
+-------------------
+align: left , center , right
+bordercolor
+cellpadding | inner space of cell
+cellspacing | outer space of cell
+bordercolor
+colorspan
+rowspan
+-----------------
+
+css start
+------------------
+stands for cascading stylesheet
+developed by Hakon wium lie and Bert Boss in 1996
+describes how html element(tags) are to be display on web browser.
+single line comment are not valid in css
+i- internal css
+------------------------------
+ syntax of internal css --- 
+ <style>
+        selector{
+            property:value;
+            property:value;
+            property:value;
+        }
+         selector{
+            property:value;property:value;property:value;
+        }
+ </style>
+ii- external css
+iii - inline css
+
+
+
+
+
+
+
+
+
+
+Selector
+---------------
+it is used to select html tags to apply css.
+
+Types of selector
+----------------------
+i- Tag/element Selector
+ii- Class Selector
+iii- ID Selector
+iv- Group Selector
+v- Child Selector
+vi- Pseudo Selector
+vii- Odd Selector
+vii- Even Selector
+viii- Direct Child Selector
+ix- nth-Child Selector
+x- Universal Selector
+
+
+
+
+
+
+
+
+
+
+
+border
+-------------
+border-width
+border-style-solid, dotted,dashed,doubled,groove
+border-color
+
+Shorthand rule ----- border: width style color;
+
+--------------------
+
+text-align
+-----
+text-align:left(default) | center | right
+
+
+
+=====================================
+---------------------------------------------------------
+writing mode -- Horizontal-tb(Defauly value) | vertical-rl | vertical-lr
+
+text-transform: uppercase | lowercase | capitalize
+---------------------------------------------------------
+
+
+=================
+--------------------------
+line-height -- define height b/t line
+--------------------------
+=====================
+---------------------------
+word spacing ---- manage gap between words
+---------------------------
+letter spacing -- manage gap between letter
+---------------------------
+===================
+

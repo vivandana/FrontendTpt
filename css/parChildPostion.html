@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Child Position</title>
+    <style>
+        .outer{
+            height: 500px;
+            width: 800px;
+            border: 10px solid black;
+            margin: 50px auto;
+            position: relative;
+        }
+        .inner{
+            height: 80px;
+            width: 80px;
+            background-color: plum;
+            position: absolute;
+            top:-40px;
+            right:-60px;
+        }
+         .inner2{
+            height: 80px;
+            width: 80px;
+            background-color: black;
+            position: absolute;
+            top:-60px;
+            left:-40px;
+        }
+          .inner3{
+            height: 80px;
+            width: 80px;
+            background-color: plum;
+            position: absolute;
+            bottom:-30px;
+            left:-60px;
+        }
+          .inner4{
+            height: 80px;
+            width: 80px;
+            background-color: black;
+            position: absolute;
+            bottom:-60px;
+            right:-40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+    <div class="inner"></div>
+    <div class="inner2"></div>
+    <div class="inner3"></div>
+    <div class="inner4"></div>
+    </div>
+</body>
+</html>

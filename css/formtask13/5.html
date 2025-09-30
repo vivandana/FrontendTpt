@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #eaeaea;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .contact-box {
+      background: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 700px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-box h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .form-row input {
+      flex: 1;
+    }
+
+    .contact-box input,
+    .contact-box select,
+    .contact-box textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 8px;
+      background: #f5f5f5;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .contact-box textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    .contact-box button {
+      width: 100%;
+      padding: 14px;
+      background: #222;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact-box button:hover {
+      background: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-box">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Full Name *" required>
+      
+      <div class="form-row">
+        <input type="email" placeholder="Email *" required>
+        <input type="tel" placeholder="Phone" required>
+      </div>
+
+      <select required>
+        <option value="">Needed Services *</option>
+        <option value="web">Web Development</option>
+        <option value="app">Mobile App Development</option>
+        <option value="design">UI/UX Design</option>
+        <option value="seo">SEO Services</option>
+      </select>
+
+      <textarea placeholder="Message"></textarea>
+
+      <button type="submit">Submit →</button>
+    </form>
+  </div>
+</body>
+</html>

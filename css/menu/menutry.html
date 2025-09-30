@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        #navbar{
+            background-color: lightgray;
+            overflow: hidden;
+            height: 50px;
+            width: 1000px;
+            padding-left: 10px;
+            padding-right: 30px;
+            box-sizing: border-box;
+            margin: 10px  auto;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+            font-weight: bold;
+            font-size: 18px;
+            
+        }
+        #navbar a{
+            float: left;
+            line-height: 50px;
+            display:block;
+            color:white;
+            text-align:center;
+            /* padding: 16px 15px; */
+            padding-left: 15px;
+            text-decoration: none;
+
+        }
+        #right{
+            float:right
+        }
+
+        #navbar a:hover{
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Contact</a>
+        <div id="right">
+            <a href="">Login</a>
+            <a href="">Sign Up</a>
+        </div>
+    </div>
+</body>
+</html>

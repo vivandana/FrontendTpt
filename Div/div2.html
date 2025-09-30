@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div-2</title>
+    <style>
+        #outer{
+            height: 500px;
+            width: 700px;
+            background-color: red;
+        }
+        #a{
+            height: 500px;
+            width: 100px;
+            background-color: purple;
+            float: left;
+        }
+         #b{
+            height: 500px;
+            width: 600px;
+            background-color: plum;
+            float: right;
+        }
+            #b1{
+                height: 250px;
+                width: 600px;
+                background-color: lightblue;
+            }
+            #b2{
+                height: 250px;
+                width: 600px;
+                background-color: lightgreen;
+            }
+            #b21{
+                height: 250px;
+                width: 300px;
+                background-color: yellow;
+                float: left;
+            }
+            #b22{
+                height: 250px;
+                width: 300px;
+                background-color: orange;
+                float: right;
+            }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="a"></div>
+        <div id="b">
+            <div id="b1"></div>
+            <div id="b2">
+                <div id="b21"></div>
+                <div id="b22"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

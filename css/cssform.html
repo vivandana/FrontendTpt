@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            /* background-color: peru; */
+            background-image: url("AdobeStock_1235550755_Preview.jpeg");
+            background-size: cover;
+
+            font-family: 'Arial Narrow Bold', sans-serif;
+        }
+        body:hover{
+               background-image: url("imgs.jpg");
+            background-size: cover;
+
+        }
+        .box{
+            height: 400px;
+            width: 650px;
+            /* background-color: white; */
+            margin: 200px auto;
+            border-radius: 10px;
+            padding: 50px;
+            box-sizing: border-box;
+            /* font-size: 16px; */
+           
+        }
+        .box:hover{
+             box-shadow: 0px 0px 10px 20px rgb(228, 158, 88);
+        }
+        .a{
+            height: 70px;
+            width: 100%;
+            border-radius: 20px;
+            border:none;
+            font-style: italic;
+            font-size: 30px;
+            color: peru;
+            padding-left: 30px;
+            box-sizing: border-box;
+        }
+        ::placeholder{
+            font-size: 20px;
+            padding-left: 15px;
+        }
+        label{
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <label for="" > Email
+            <input type="text"  class="a" placeholder="Email">
+        </label><br> <br>
+        <label for=""> Password
+            <input type="text"  class="a" placeholder="Password">
+        </label><br> <br>
+        <input type="submit" value="Submit" class="a">
+
+    </div>
+</body>
+</html>

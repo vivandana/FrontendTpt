@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15</title>
+    <style>
+        body{
+            background: linear-gradient(pink,plum,purple);
+            background-repeat: no-repeat;
+        }
+        div{
+            height: 550px;
+            width: 500px;
+            padding: 30px;
+            box-sizing: border-box;
+            background-color: white;
+            margin: 100px auto;
+        }
+        h1{
+            font-weight: bold;
+            text-align: center;
+        }
+        .login{
+            height: 40px;
+            width: 200px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            background: linear-gradient(45deg,purple,pink,plum);
+            border: none;
+            border-radius: 6px;
+            color: white;
+        }
+        .signup{
+            height: 40px;
+            width: 200px;
+            /* margin: 15px; */
+            border: 1px solid gainsboro;
+            font-weight: bold;
+            background: none;
+
+        }
+        .input{
+            height: 40px;
+            width: 400px;
+            margin: 10px;
+            box-shadow: 0px 0px 6px 1px gainsboro;
+            border: 2px gainsboro solid;
+            background: none;
+        }
+        ::placeholder{
+            color: gainsboro;
+            font-size: 15px;
+            padding-left: 15px;
+
+        }
+        p{
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Login Form</h1>
+        <input type="submit" value="Login" class="login">
+        <input type="submit" value="Signup"  class="signup">
+        <input type="text" placeholder="Email Address" class="input"> <br>
+        <input type="text" placeholder="Password" class="input"> 
+          
+        <p style="color: plum;margin-left: 10px;">Forgot password?</p>
+        <input type="submit" value="Login" class="login" style="width: 400px; margin-left: 10px;">
+        <p style="margin-left: 150px;">Not a member? <a href="" style="color: plum;text-decoration: none;">Signup Now</a>
+        </p>
+
+    </div>
+</body>
+</html>

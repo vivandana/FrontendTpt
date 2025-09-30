@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: azure;
+        }
+        .menu{
+            height: 50px;
+            width: 1000px;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            background: linear-gradient(45deg,navy,skyblue);
+            backdrop-filter: blur(10px);
+            border: 1px solid whitesmoke;
+            /* box-shadow: 0px 0px 10px 5px white inset; */
+
+
+        }
+        nav ul{
+            list-style-type: none;
+        }
+        nav ul a{
+            text-decoration: none;
+            color: white;
+            float: left;
+            transform: translateY(-10px);
+        }
+
+          nav ul a:hover{
+            color: black;
+            transform: scale(1);
+          }
+        nav ul li{
+            height: 40px;
+            width: 120px;
+            margin-right: 3px;
+            line-height: 40px;
+            transform: translateY(-10px,-20px);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <nav>
+            <ul>
+                <a href=""><li>Home</li></a>
+                <a href=""><li>About</li></a>
+                <a href=""><li>Service</li></a>
+                <a href=""><li>Portfolio</li></a>
+                <a href=""><li>Contact</li></a>
+                <a href=""><li>Register</li></a>
+                <a href=""><li>Login</li></a>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

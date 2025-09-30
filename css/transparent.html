@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transparent</title>
+    <style>
+        body{
+            background: url("imgs.jpg");
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+        #box{
+            height: 400px;
+            width: 600px;
+            margin: 120px auto;
+            text-align: center;
+            /* background-color: red; */
+            /* rde green blue opacity_amount */
+            /* background: rgba(9, 248, 5, 0.3); */
+            /* background: linear-gradient(45deg,
+                 rgba(9, 248, 5, 0.3), rgba(170, 24, 160, 0.3), rgba(229, 133, 8, 0.3), rgba(11, 108, 150, 0.3), rgba(43, 16, 164, 0.3)
+            ); */
+            background: radial-gradient(circle,
+                 rgba(249, 252, 249, 0.5), rgba(236, 244, 3, 0.5), rgba(251, 28, 4, 0.5), rgba(230, 151, 5, 0.5), rgba(217, 157, 7, 0.5)
+            );
+              /* background: conic-gradient(
+                 rgba(9, 248, 5, 0.3), rgba(170, 24, 160, 0.3), rgba(229, 133, 8, 0.3), rgba(11, 108, 150, 0.3), rgba(43, 16, 164, 0.3),rgba(9, 248, 5, 0.3)
+            ); */
+            color: white;
+            font-size: 60px;
+            line-height: 400px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            /* opacity: 0.3; */
+            transition: all 3s;
+        }
+        #box:hover{
+            box-shadow:0px 0px 1px 10px rgba(255,255,255,0.7) , 0px 0px 1px 20px rgba(252, 241, 241, 0.6),0px 0px 1px 30px rgba(238, 226, 226, 0.5),0px 0px 1px 40px rgba(255,255,255,0.4),0px 0px 1px 50px rgba(255,255,255,0.3);
+            transition: all 3s;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        TECHPILE
+    </div>
+</body>
+</html>

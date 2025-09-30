@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill mode animation</title>
+    <style>
+         div{
+      height: 50px;
+      width: 50px;
+      background-color: red;
+      animation-name: abc;
+      animation-duration: 5s;
+      animation-delay: 3s;
+      animation-iteration-count: infinite;
+      /* animation-fill-mode: none; */
+      animation-fill-mode: both;
+      /* animation-fill-mode: forwards; */
+      /* animation-fill-mode: backwards; */
+
+
+    }
+    @keyframes  abc{
+        from{
+            width: 200px;
+            background-color: darkblue;
+        }
+        to{
+            width: 1000px;
+            background-color: darkgrey;
+        }
+    }
+    </style>
+   
+</head>
+<body>
+    <div></div>
+</body>
+</html>

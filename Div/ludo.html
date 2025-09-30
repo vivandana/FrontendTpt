@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo Board</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .board {
+            display: grid;
+            grid-template-columns: repeat(15, 40px);
+            grid-template-rows: repeat(15, 40px);
+            gap: 2px;
+        }
+
+        .cell {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        /* Define home areas */
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        /* Center triangle */
+        .center {
+            display: grid;
+            grid-template-columns: repeat(2, 40px);
+            grid-template-rows: repeat(2, 40px);
+        }
+
+        .center div {
+            width: 40px;
+            height: 40px;
+        }
+
+        /* Special path cells */
+        .path-red {
+            background-color: red;
+        }
+
+        .path-blue {
+            background-color: blue;
+        }
+
+        .path-yellow {
+            background-color: yellow;
+        }
+
+        .path-green {
+            background-color: green;
+        }
+
+        .center-square {
+            background: linear-gradient(to bottom right, red 50%, blue 50%), 
+                        linear-gradient(to top right, green 50%, yellow 50%);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="board">
+
+        <!-- Top-left Blue Home -->
+        <div class="blue cell"></div><div class="blue cell"></div><div class="blue cell"></div><div class="blue cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+
+        <!-- Top Path Red -->
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="path-red cell"></div><div class="path-red cell"></div><div class="path-red cell"></div><div class="path-red cell"></div><div class="path-red cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+
+        <!-- Top-right Red Home -->
+        <div class="red cell"></div><div class="red cell"></div><div class="red cell"></div><div class="red cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+
+        <!-- Left Path Blue -->
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="path-blue cell"></div><div class="path-blue cell"></div><div class="path-blue cell"></div><div class="path-blue cell"></div><div class="path-blue cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+
+        <!-- Center -->
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell center-square cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+
+        <!-- Right Path Green -->
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="path-green cell"></div><div class="path-green cell"></div><div class="path-green cell"></div><div class="path-green cell"></div><div class="path-green cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+
+        <!-- Bottom-left Yellow Home -->
+        <div class="yellow cell"></div><div class="yellow cell"></div><div class="yellow cell"></div><div class="yellow cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+
+        <!-- Bottom Path Yellow -->
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="path-yellow cell"></div><div class="path-yellow cell"></div><div class="path-yellow cell"></div><div class="path-yellow cell"></div><div class="path-yellow cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+
+        <!-- Bottom-right Green Home -->
+        <div class="green cell"></div><div class="green cell"></div><div class="green cell"></div><div class="green cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+
+    </div>
+</body>
+
+</html>

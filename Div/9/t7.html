@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #outermain
+    {
+      height: 950px;
+      width: 600px;
+      background: black;
+      border-radius: 15px;
+      box-sizing: border-box;
+      padding: 65px 50px;
+      box-sizing: border-box;
+    }
+    #outer
+    {
+      height: 800px;
+      width: 500px;
+      background:black;
+      border-radius: 15px;
+      box-sizing: border-box;
+    }
+    #upper
+    {
+      min-height: 200px;
+      width: 100%;
+      text-align: end;
+      box-sizing: border-box;
+      font-weight: bolder;
+      padding-right: 50px;
+      font-size: 100px;
+      color: white;
+      line-height: 200px;
+    }
+    .orange
+    {
+      background: orange !important;
+    }
+   
+    #lower
+    {
+      background:black;
+      height: 600px;
+      width: 100%;
+      margin: 0px;
+      padding:35px;
+      box-sizing: border-box;
+      border-radius: 20px;
+
+    }
+    .row
+    {
+      height: 100px;
+      width: 100%;
+    }
+    .white
+    {
+      background: rgb(198, 195, 195) !important;
+      color: black !important;
+    }
+    .column
+    {
+      height: 90px;
+      width: 90px;
+      float: left;
+      background: rgb(112, 108, 108);
+      border-radius: 50%;
+      line-height: 100px;
+      font-size: 40px;
+      text-align: center;
+      margin: 8px;
+      box-sizing: border-box;
+      font-weight: bolder;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+      <div id="outer">
+          <div id="upper">
+            7744
+          </div>
+          <div id="lower">
+            <div class="row">
+              <div class="column white">C</div>
+              <div class="column white">+/-</div>
+              <div class="column white">%</div>
+              <div class="column orange">+</div>
+            </div>
+            <div class="row">
+              <div class="column">7</div>
+              <div class="column">8</div>
+              <div class="column">9</div>
+              <div class="column orange">X</div>
+            </div>
+            <div class="row">
+              <div class="column">4</div>
+              <div class="column">5</div>
+              <div class="column">6</div>
+              <div class="column orange">-</div>
+            </div>
+            <div class="row">
+              <div class="column">1</div>
+              <div class="column">2</div>
+              <div class="column">3</div>
+              <div class="column orange">+</div>
+            </div>
+            <div class="row">
+              <div class="column red" style="width: 200px;border-radius: 50px;">0</div>
+              <div class="column red">.</div>
+              <div class="column orange">=</div>
+            </div>
+          </div>
+      </div>
+</body>
+</html>

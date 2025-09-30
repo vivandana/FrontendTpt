@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #outer
+    {
+      height: 800px;
+      width: 500px;
+      background: #000;
+      border-radius: 15px;
+      box-sizing: border-box;
+    }
+    #upper
+    {
+      min-height: 200px;
+      width: 100%;
+      text-align: end;
+      box-sizing: border-box;
+      font-weight: bolder;
+      background: #221854;
+    }
+    #inp1
+    {
+      font-size: 40px;
+      background: #392a85 !important;
+      height: 100px;
+      width: 100%;
+    }
+    #inp2
+    {
+      font-size: 50px;
+      color: white;
+    }
+    .org
+    {
+      background: rgba(189, 189, 240, 0.903) !important;
+      color: black;
+    }
+    .green
+    {
+      background: rgb(52, 54, 52) !important;
+      color: white;
+    }
+    .red
+    {
+      background: red !important;
+      color: white;
+    }
+
+    #lower
+    {
+      background: blue;
+      height: 630px;
+      width: 100%;
+      margin: 0px;
+      padding:15px;
+      box-sizing: border-box;
+      border-radius: 20px;
+
+    }
+    .row
+    {
+      height: 100px;
+      width: 100%;
+    }
+    .column
+    {
+      height: 80px;
+      width: 100px;
+      float: left;
+      background: rgb(213, 217, 230);
+      border-radius: 10px;
+      line-height: 80px;
+      font-size: 40px;
+      text-align: center;
+      margin: 8px;
+      box-sizing: border-box;
+      font-weight: bolder;
+      border: 1px groove white;
+    }
+  </style>
+</head>
+<body>
+  <div id="outer">
+      <div id="upper">
+          <div id="inp1"></div>
+          <div id="inp2">Ans</div>
+      </div>
+      <div id="lower">
+        <div class="row">
+          <div class="column org">(</div>
+          <div class="column org">)</div>
+          <div class="column red">C</div>
+          <div class="column red">cls</div>
+        </div>
+        <div class="row">
+          <div class="column org">%</div>
+          <div class="column org">x<sup>2</sup></div>
+          <div class="column org">/x</div>
+          <div class="column org">%</div>
+        </div>
+        <div class="row">
+          <div class="column">7</div>
+          <div class="column">8</div>
+          <div class="column">9</div>
+          <div class="column org">+</div>
+        </div>
+        <div class="row">
+          <div class="column">4</div>
+          <div class="column">5</div>
+          <div class="column">9</div>
+          <div class="column org">x</div>
+        </div>
+        <div class="row">
+          <div class="column">1</div>
+          <div class="column">2</div>
+          <div class="column">3</div>
+          <div class="column org">+</div>
+        </div>
+        <div class="row">
+          <div class="column org">+/-</div>
+          <div class="column">0</div>
+          <div class="column org">.</div>
+          <div class="column green">=</div>
+        </div>
+       
+      </div>
+  </div>
+</body>
+</html>

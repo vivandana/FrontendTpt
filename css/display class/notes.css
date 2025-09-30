@@ -1,0 +1,24 @@
+flex-box
+=========
+flex-container
+flex-item
+========
+display:flex;
+flex-direction:row(default),column,row-reverse,column-reverse
+flex-wrap:rowwrap(default),wrap,wrap-reverse
+flex-flow:flex-direction flex-wrap (shorthand)
+justify-content:flex-start,flex-end,center,space-between,space-around,space-evenly,
+align-item
+align-content
+row-gap
+column-gap
+gap
+----------
+flex-items ------ order
+flex-grow ------------  kitni speed se item grow hoga
+flex-shrink --
+flex-basis  -- grow aur shrink se pehle item ki width
+justify-content:
+align-self flex-start,center,flex-end
+
+-----------

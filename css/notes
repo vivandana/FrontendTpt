@@ -1,0 +1,157 @@
+transform----
+
+transition: property time innsecomds;
+transition: backgroundC 2s, border 5s;
+
+box-shadow:horizontal vertical blur spread color size;
+=================
+pehli value decide krta hai shadow left ya right bnega.. 
+positive value=right
+negative value = :left
+===================
+dusri value decide krta hai shadow top ya bottom bnega.. 
+positive value=bottom
+negative value = top
+=====================
+s
+
+------------------------------------------------------------
+text-shadow:horizontal vertical blur color;
+============
+pehli value decide krta hai shadow left ya right bnega.. 
+positive value=right
+negative value = :left
+
+
+dusri value decide krta hai shadow top ya bottom bnega.. 
+positive value=bottom
+negative value = top
+
+
+
+
+
+apply multipple color shadow:=-----------
+
+text-shadow: 10px 10px 1px blue , 10px 10px 1px blue;
+
+=============================================
+
+
+11/09/2025
+
+==============
+
+Gradient background
+----------------------------------
+linear linearGradient
+repeating-linear-gradient
+radial-gradient
+repeating-radial-gradient
+conic-gradient
+repeating-conic-gradient
+
+
+
+-----------------
+-o-lineaar-gradient
+-moz-linear-gradient
+-safari-linear-gradient
+-webkit-linear-gradient
+
+
+
+-----------------
+
+position: static(default),relative,fixed,absolute,sticky
+
+top | bottom | left | right
+never use top bottom or left right together
+
+
+---------------
+
+z-index -- 
+
+
+----------------------
+
+animation
+=============
+animation-name
+animation-duration:time in second;
+animation-delay: time in second;
+animation-direction:normal | reverse | alternate | alternate-reverse
+animation-iteration-count: number | infinite
+animation-play-state: running | pause
+animation-fill-mode:  none | forward | backward | both;
+animation-timing-function:
+linear - same speed from start to end
+ease - start slow then fast  & end slow
+ease-in - start slow
+ease-out - end slow
+ease-in-out -  starting slow ending slow
+steps - steps
+
+
+============
+shorthand rule of animation
+===============
+animation: animation-name animation-duration timing-function delay iteration-count direction fill-mode play-state;
+
+
+animation-name animation-duration--compulsory
+timing-function delay iteration-count direction fill-mode play-state;--- optional
+
+
+Syntax of animation ------- 
+
+@keyframes animationName
+{
+    from{
+        property:value;
+        property:value;
+        property:value;
+    }
+    to{
+        property:value;
+        property:value;
+        property:value;
+    }
+}
+
+
+@keyframes abc{
+    0%{
+         property:value;
+        property:value;
+        property:value;
+    }
+    100%{
+         property:value;
+        property:value;
+        property:value;
+    }
+}
+===========
+css apply hone KA TIME ALAG ALAG ho jayega
+0%{}
+20%{}
+40%{}
+60%
+80%
+100%
+=============
+css apply hone KA TIME saame rhega jb gap same hota hai
+
+0%{}
+50%{}
+20%{}
+40%
+60%
+100%
+80%
+56%
+===================
+
+

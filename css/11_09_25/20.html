@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20</title>
+    <style>
+        body{
+            background:linear-gradient(45deg,blueviolet,purple,plum,pink);
+            background-repeat: no-repeat;
+        }
+        .box{
+            height: 600px;
+            width: 500px;
+            background-color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 30px;
+            padding-left: 30px;
+            margin: 100px auto;
+
+        }
+        input{
+            border-bottom: rgb(164, 158, 158) solid 2px;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            height: 30px;
+            margin: 25px;
+            width: 350px;
+          
+        }
+        ::placeholder{
+            color: rgb(164, 158, 158);
+        }
+
+        .btn{
+            border: rgb(164, 158, 158) 2px solid;
+            width: 350px;
+            height: 40px;
+            border-radius: 30px;
+        }
+        .sp{
+            margin-left: 100px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 style="text-align: center; font-weight: bold;">Register</h1>
+        <hr style="color:gray; border: 2px solid rgb(164, 158, 158);  width: 400px;">
+        <input type="text" placeholder="Name">
+        <br>
+        <input type="email" placeholder="Email">
+        <br>
+         <input type="password" placeholder="Password">
+        <br>
+         <input type="password" placeholder="Confirm Password">
+        <br>
+         <input type="submit" value="Submit" class="btn">
+        <br>
+        <span class="sp">Have an Account? <a href="" style=" text-decoration: none;color: blueviolet;">Login Here</a></span>
+
+    </div>
+</body>
+</html>

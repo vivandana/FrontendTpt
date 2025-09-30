@@ -1,0 +1,41 @@
+h1{
+
+        color: white;
+                background-color: pink;
+                text-align: left;
+                border: 5px solid purple;
+}
+
+h2{
+    color: green;
+    background-color: lightblue;
+    text-align: center;
+    border: 5px dashed orange;
+}
+
+h3{
+    color: blue;
+    background-color: yellow;
+    text-align: left;
+    border: 5px solid black;
+}
+
+h4{
+    color: purple;
+    background-color: lightgreen;
+    text-align: right;
+    border: 5px double brown;
+}
+
+h5{
+    color: orange;
+    background-color: lightgray;
+    text-align: center;
+    border: 5px groove navy;
+}
+h6{
+    color: brown;
+    background-color: lightyellow;
+    text-align: left;
+    border: 5px ridge teal;
+}

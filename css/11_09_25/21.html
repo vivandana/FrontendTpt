@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+        .box{
+            height: 700px;
+            width: 1000px;
+            background-color: white;
+            box-shadow: 0px 0px 10px 10px rgb(222, 184, 184);
+            margin: 100px auto;
+        }
+        .left{
+            height: 700px;
+            width: 600px;float: left;
+            background: url('github.avif');
+            background-size: 500px 700px;
+            background-repeat: no-repeat;
+        }
+          .opac{
+            height: 700px;
+            width: 500px;float: left;
+           background: linear-gradient(rgba(53, 5, 228, 0.2),rgba(228, 5, 128, 0.2),rgba(218, 11, 11, 0.916));
+        }
+         .right{
+            height: 700px;
+            width: 400px;float: left;
+            font-size: 20px;
+            padding: 0px;
+            margin: 0px;
+        }
+        input{
+            border:none;
+            border-bottom:gainsboro 2px solid;
+            background: none;
+            margin: 5px;
+            height: 30px;
+            width: 300px;
+
+        }
+        label{
+            color: rgb(174, 174, 174);
+        }
+        .btn{
+            background: linear-gradient(45deg,lightpink,hotpink,rgb(246, 13, 13));
+            /* background-color: aqua; */
+            border-radius: 30px;
+            height: 30px;
+            width: 200px;
+        }
+
+        input:hover{
+            border-bottom: pink solid 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="left">
+            <div class="opac"></div>
+        </div>
+        <div class="right">
+            <h1 style="margin: 50px;">Sign Up</h1>
+            <label for="">
+                Full Name <br>
+                <input type="text"> <br>
+            </label>
+            <label for="">
+                Email <br>
+                <input type="email"> <br>
+            </label>
+            <label for="">
+                Username<br>
+                <input type="text"> <br>
+            </label>
+            <label for="">
+                Password <br>
+                <input type="password"> <br>
+            </label>
+            <label for="">
+               Repeat Password <br>
+                <input type="password"> <br>
+            </label> <br>
+            <input type="checkbox" style="height: 20px;width:20px; "><span style="color: rgb(174, 174, 174);">I agree to the <b style="color: black;">Terms of User</b></span> <br> <br>
+            <input type="submit" value="Submit" class="btn">&ensp; &ensp;&ensp; <a href="" style="color: black;text-decoration: none; color: rgb(174, 174, 174);">Sign in &rarr;</a>
+        </div>
+    </div>
+</body>
+</html>

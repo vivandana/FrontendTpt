@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* :root
+        {
+
+        } */
+         body 
+         {
+            background: rgba(0,0,0,.7);
+            overflow: hidden;
+         }
+        *
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+        html
+        {
+            --color1:#ff3d00;
+            --color2:orange;
+        }
+        .bg-mycolor
+        {
+            background: linear-gradient(45deg,var(--color1),var(--color2));
+        }
+        #outer
+        {
+            min-height: 500px;
+            width: 1000px;
+            margin: 40px auto;
+            overflow-y: hidden;
+        }
+        #top
+        {
+            height: 100px;
+            width: 1000px;
+            background: repeating-radial-gradient( circle at 50% 50%, var(--color1)5%, var(--color2) 10%);
+            text-align: center;
+            line-height: 100px;
+            font-size: 70px;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        #bottom
+        {
+            height: 500px;
+            width: 1000px;
+            background: green;
+        }
+        .b 
+        {
+            height: 500px;
+            width: 500px;
+            float: left;
+            background: white;
+            padding: 55px;
+            box-sizing: border-box;
+        }
+        .x
+        {
+            background: linear-gradient(rgba(0,0,0,.4)),url("/css/awesome.jpg");
+            background-size: cover;
+            background-position: right;
+            background-attachment: fixed;
+        }
+        .txt{
+            width: 100%;
+            height: 50px;
+            border: none;
+            background: rgba(0,0,0,.05);
+            margin-bottom: 15px;
+            padding-left: 15px;
+            box-sizing: border-box;
+        }
+         .txta{
+            width: 100%;
+            height: 90px;
+            border: none;
+            background: rgba(0,0,0,.05);
+            margin-bottom: 15px;
+            resize: none;
+        }
+
+        :focus{
+            outline: none;
+        }
+
+        .btn{
+            height: 50px;
+            width: 100%;
+            border: none;
+            color: white;
+        }
+
+        .b1{
+            height: 390px;
+            width: 390px;
+            background: rgba(0,0,0,.3);
+            backdrop-filter: blur(5px);
+            color: white;
+            padding: 30px;
+            box-sizing: border-box;
+            font-size: 30px;
+        }
+        .animate{
+            height: 50px;
+            width: 50px;
+            background: rgba(0,0,0,.03);
+            box-shadow: 2px 2px 2px rgba(217, 237, 174, 0.05),-2px -2px 2px rgba(140, 208, 163, 0.05) ;
+            line-height: 50px;
+            text-align: center;
+            position: absolute;
+            top: 0px;
+            animation: abc 5s infinite ease;
+
+        }
+
+        @keyframes abc {
+            0%{
+                top:10px;
+                left: 0%;
+                transform: rotate(0deg);
+            
+            }
+            25%{
+                top: 0px;
+                left: 90%;
+                transform: rotate(360deg);
+            }
+            50%{
+                top:90%;
+                left: 90%;
+                transform: rotate(-360deg);
+            }
+            75%{
+                top: 90%;
+                left: 0px;
+                transform: rotate(360deg);
+                
+            }
+            100%{
+             top:0px;
+                left: 0px;
+                transform: rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+<body >
+    <div id="outer">
+        <div id="top">
+            Welcome to <b>Code Helper</b> 
+        </div>
+        <div id="bottom">
+            <div class="b x">
+                <div class="b1">
+                    <b>Call us </b> <br>
+                +91 265376373465 <br>
+                <b>Mail Us</b> <br>
+                vandana@gmail.com  <br>
+                <b>Address</b> <br>
+                 01/01 Mau Aima Prayagraj 212507
+                </div>
+            </div>
+            <div class="b">
+               <input type="text" class="txt" placeholder="Name..."> 
+               <input type="email" class="txt" placeholder="Email..."> 
+               <input type="number" class="txt" placeholder="Number..."> 
+               <textarea class="txta" placeholder="Message...."></textarea>
+               <button class="btn bg-mycolor">Save</button>
+            </div>
+        </div>
+        <div class="animate">
+            TP
+        </div>
+    </div>
+</body>
+</html>
+
+
+ <!-- .container>.item-$*8{item-$} -->

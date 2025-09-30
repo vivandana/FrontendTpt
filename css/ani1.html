@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+             background: url("11_09_25/pink1.jpg");
+             background-size: cover;
+             background-repeat: no-repeat;
+             animation: abc 5s  infinite alternate ;
+        }
+        body:hover{
+            animation-play-state: paused;
+        }
+        @keyframes abc{
+            0%{
+                background: url("11_09_25/pink2.webp");
+                    background-size: 1000px 1000px;
+             background-repeat: no-repeat;
+            }
+            25%{
+                  background: url("11_09_25/pink3.png");
+                    background-size: 1000px 1000px;
+             background-repeat: no-repeat;
+            }
+            50%{
+                  background: url("11_09_25/square.jpeg");
+                    background-size: 1000px 1000px;
+             background-repeat: no-repeat;
+            }
+            100%{
+                  background: url("imgs.jpg");
+                    background-size: 1000px 1000px;
+             background-repeat: no-repeat;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

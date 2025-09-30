@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form2</title>
+    <style>
+        body{
+            background: url("/imgs.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,89,0.1),url("/imgs.jpg")); */
+           
+        }
+        .form{
+            height: 500px;
+            width: 600px;
+            padding: 60px;
+            box-sizing: border-box;
+            margin: 100px auto;
+            background-color: white;
+            border-radius: 20px;
+        }
+        .opac{
+             height: 100%;
+            width: 100%;
+            /* padding: 60px; */
+            box-sizing: border-box;
+             background: rgba(236, 244, 3, 0.5);
+            top: 0px;
+
+            position:absolute;
+
+        }
+        h1{
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+        }
+        input,textarea{
+            height: 30px;
+            width: 430px;
+            margin: 10px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px solid black;
+        }
+        textarea{
+            resize: none;
+            border-bottom: 2px solid black;
+        }
+        ::placeholder{
+            padding-left: 15px;
+
+        }
+        .btn{
+            height: 30px;
+            width: 200px;
+            border: none;
+            background: linear-gradient(45deg,red,pink,orange);
+            margin-left: 140px;
+        }
+    </style>
+</head>
+<body>
+    <div class="opac">
+    <div class="form">
+        
+            <h1>Contact Us</h1>
+        <input type="text" placeholder="Name"> <br>
+        <input type="email" placeholder="Email"> <br>
+        <textarea name="" id="" placeholder="Message"></textarea> <br>
+        <input type="submit" class="btn" value="Send your Message">
+        </div>
+        </div>
+ 
+</body>
+</html>

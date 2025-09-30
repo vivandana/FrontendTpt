@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Navbar using UL and LI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        /* Navbar container */
+        .navbar {
+            background-color: #333;
+        }
+
+        /* Remove default list styling */
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        /* List items */
+        .navbar ul li {
+            margin: 0;
+        }
+
+        /* Links */
+        .navbar ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #575757;
+        }
+
+        /* Right aligned items */
+        .navbar ul li.right {
+            margin-left: auto;
+        }
+
+        /* Responsive: stack vertically on small screens */
+        @media screen and (max-width: 600px) {
+            .navbar ul {
+                flex-direction: column;
+            }
+
+            .navbar ul li.right {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="right"><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

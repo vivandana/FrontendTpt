@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 40</title>
+    <style>
+        #a1{
+            border: 2px solid #356197; background-color: #356197; color: white; word-spacing: 20px; letter-spacing: 10px; 
+        }
+        #a2{
+            border: 2px solid #6AC22E; background-color: #6AC22E; color: white; word-spacing: 15px; letter-spacing: 5px; 
+        }
+        #a3{
+            border: 2px solid #9F23C5; background-color: #9F23C5; color: white; word-spacing: 10px; letter-spacing: 15px; 
+        }
+        #a4{
+            border: 2px solid #D4845C; background-color: #D4845C; color: white; word-spacing: 5px; letter-spacing: 20px; 
+        }
+        #a5{
+            border: 2px solid #09E5F3; background-color: #09E5F3; color: white; word-spacing: 25px; letter-spacing: 0px; 
+        }
+        #a6{
+            border: 2px solid #3E468A; background-color: #3E468A; color: white; word-spacing: 0px; letter-spacing: 25px; 
+        }
+        #a7{
+            border: 2px solid #73A721; background-color: #73A721; color: white; word-spacing: 15px; letter-spacing: 15px; 
+        }
+        #a8{
+            border: 2px solid #A808B8; background-color: #A808B8; color: white; word-spacing: 20px; letter-spacing: 5px; 
+        }
+        #a9{
+            border: 2px solid #DD694F; background-color: #DD694F; color: white; word-spacing: 5px; letter-spacing: 10px; 
+        }
+        #a10{
+            border: 2px solid #FF5733; background-color: #FF5733; color: white; word-spacing: 10px; letter-spacing: 10px;  writing-mode: vertical-rl; text-transform: uppercase; line-height: 30px;
+        }
+        #a11{
+            border: 2px solid #472B7D; background-color: #472B7D; color: white; word-spacing: 15px; letter-spacing: 5px;  text-transform: capitalize; line-height: 30px;
+        }
+        #a12{
+            border: 2px solid #7C8C14; background-color: #7C8C14; color: white; word-spacing: 20px; letter-spacing: 0px;  text-transform: lowercase; line-height: 30px;
+        }
+        #a13{
+            border: 2px solid #B1EDAB; background-color: #B1EDAB; color: black; word-spacing: 0px; letter-spacing: 20px;  text-transform: uppercase; line-height: 30px;
+        }
+        #a14{
+            border: 2px solid #E64E42; background-color: #E64E42; color: white; word-spacing: 10px; letter-spacing: 10px;  text-transform: lowercase; line-height: 30px;
+        }
+        #a15{
+            border: 2px solid #1BAFD9; background-color: #1BAFD9; color: white; word-spacing: 15px; letter-spacing: 5px;  text-transform: capitalize; line-height: 30px;
+        }
+        #a16{
+            border: 2px solid #501070; background-color: #501070; color: white; word-spacing: 20px; letter-spacing: 0px;  text-transform: uppercase; line-height: 30px;
+        }
+        #a17{
+            border: 2px solid #857107; background-color: #857107; color: white; word-spacing: 5px; letter-spacing: 15px;  text-transform: lowercase; line-height: 30px;
+        }
+        #a18{
+            border: 2px solid #BAD29E; background-color: #BAD29E; color: black; word-spacing: 10px; letter-spacing: 10px;  text-transform: capitalize; line-height: 30px;
+        }
+        #a19{
+            border: 2px solid #EF3335; background-color: #EF3335; color: white; word-spacing: 15px; letter-spacing: 5px;  text-transform: uppercase; line-height: 30px;
+        }
+        #a20{
+            border: 2px solid #33EF57; background-color: #33EF57; color: white; word-spacing: 5px; letter-spacing: 15px;  writing-mode: vertical-lr; text-transform: lowercase; line-height: 30px;
+        }
+        #a21{
+            border: 2px solid #59F563; background-color: #59F563; color: white; word-spacing: 20px; letter-spacing: 0px;  text-transform: capitalize; line-height: 30px;
+        }
+        #a22{
+            border: 2px solid #8E56FA; background-color: #8E56FA; color: white; word-spacing: 10px; letter-spacing: 10px;  text-transform: uppercase; line-height: 30px;
+        }
+        #a23{
+            border: 2px solid #C3B791; background-color: #C3B791; color: black; word-spacing: 0px; letter-spacing: 20px;  text-transform: lowercase; line-height: 30px;
+        }
+        #a24{
+            border: 2px solid #F81828; background-color: #F81828; color: white; word-spacing: 15px; letter-spacing: 5px;  text-transform: capitalize; line-height: 30px;
+        }
+        #a25{
+            border: 2px solid #2D79BF; background-color: #2D79BF; color: white; word-spacing: 5px; letter-spacing: 15px;  text-transform: uppercase; line-height: 30px;
+        }
+        #a26{
+            border: 2px solid #62DA56; background-color: #62DA56; color: white; word-spacing: 20px; letter-spacing: 0px;  text-transform: lowercase; line-height: 30px;
+        }
+        #a27{
+            border: 2px solid #973BED; background-color: #973BED; color: white; word-spacing: 10px; letter-spacing: 10px;  text-transform: capitalize; line-height: 30px;
+        }
+        #a28{
+            border: 2px solid #CC9C84; background-color: #CC9C84; color: black; word-spacing: 0px; letter-spacing: 20px;  text-transform: uppercase; line-height: 30px;
+        }
+        #a29{
+            border: 2px solid #01FD1B; background-color: #01FD1B; color: black; word-spacing: 15px; letter-spacing: 5px; 
+             text-transform: lowercase; line-height: 30px;
+        }
+        #a30{
+            border: 2px solid #F3E20D; background-color: #F3E20D; color: black; word-spacing: 20px; letter-spacing: 0px;  writing-mode: sideways-lr; text-transform: capitalize; line-height: 30px;
+        }
+        #a31{
+            border: 2px solid #6BBF49; background-color: #6BBF49; color: white; word-spacing: 5px; letter-spacing: 15px;  text-transform: uppercase; line-height: 30px;
+        }
+        #a32{
+            border: 2px solid #A020E0; background-color: #A020E0; color: white; word-spacing: 10px; letter-spacing: 10px;  text-transform: lowercase; line-height: 30px;
+        }
+        #a33{
+            border: 2px solid #D58177; background-color: #D58177; color: white; word-spacing: 10px; letter-spacing: 10px;   line-height: 30px;
+        }
+        #a34{
+            border: 2px solid #0AE20E; background-color: #0AE20E; color: black; word-spacing: 20px; letter-spacing: 5px;  text-transform: capitalize; line-height: 30px;
+        }
+        #a35{
+            border: 2px solid #4B0082; background-color: #4B0082; color: white; word-spacing: 15px; letter-spacing: 0px;  text-transform: lowercase; line-height: 30px;
+        }
+        #a36{
+            border: 2px solid #FF4500; background-color: #FF4500; color: white; word-spacing: 5px; letter-spacing: 20px;  text-transform: uppercase; line-height: 30px;
+        }
+        #a37{
+            border: 2px solid #228B22; background-color: #228B22; color: white; word-spacing: 25px; letter-spacing: 0px;  text-transform: capitalize; line-height: 30px;
+        }
+        #a38{
+            border: 2px solid #DAA520; background-color: #DAA520; color: black; word-spacing: 0px; letter-spacing: 25px;  text-transform: lowercase; line-height: 30px;
+        }
+        #a39{
+            border: 2px solid #FF69B4; background-color: #FF69B4; color: white; word-spacing: 10px; letter-spacing: 10px;  text-transform: uppercase; line-height: 30px;
+        }
+        #a40{
+            border: 2px solid #20B2AA; background-color: #20B2AA; color: white; word-spacing: 15px; letter-spacing: 5px;  text-transform: capitalize; line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tas k 1: Sa m ple output s ho wi ng bo rder colo r #3 5 6 1 97 ,
+bac kg ro und # 3 5 6 1 97. T his demo ns tr ates wo r d -s paci ng and
+le tter-s paci ng -->
+    <p      id="a1">
+        This is a sample paragraph demonstrating border color #356197, background #356197. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+
+    <!-- T a s k 2 : S a m p l e o u t p u t s h o w i n g b o r d e r c o l o r
+# 6 A C 2 2 E , b a c k g r o u n d # 6 A C 2 2 E . T h i s
+d e m o n s t r a t e s w o r d - s p a c i n g a n d l e t t e r - s p a c i n g . -->
+    <p      id="a2" >
+        This is a sample paragraph demonstrating border color #6AC22E, background #6AC22E. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+
+    <hr>
+
+    <!-- Task 3: Sample output showing border color #9F23C5, background
+#9F23C5. This demonstrates word-spacing and letter-spacing. -->
+    <p     id="a3">
+        This is a sample paragraph demonstrating border color #9F23C5, background #9F23C5. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <!--Tas k 4: Sa m ple output s ho wi ng bo rder colo r #D 48 4 5C ,
+bac kg ro und # D4 8 4 5C. T his de mo nstr ates wo r d -s paci ng and
+le tter-s paci ng.  -->
+
+    <hr>
+    <p     id="a4">
+        This is a sample paragraph demonstrating border color #D4845C, background #D4845C. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+
+    <hr>
+
+    <!--T a s k 5 : S a m p l e o u t p u t s h o w i n g b o r d e r c o l o r
+# 0 9 E 5 F 3 , b a c k g r o u n d # 0 9 E 5 F 3 . T h i s d e m o n s t r a t e s
+w o r d - s p a c i n g a n d l e t t e r - s p a c i n g . -->
+    <p     id="a5" >
+        This is a sample paragraph demonstrating border color #09E5F3, background #09E5F3. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+
+    <!--Task 6: Sample output showing border color #3E468A, background
+#3E468A. This demonstrates word-spacing and letter-spacing.  -->
+
+    <p     id="a6" >
+        This is a sample paragraph demonstrating border color #3E468A, background #3E468A. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+
+    <!-- Tas k 7: Sa m ple o utput s ho wi ng bor der co lo r
+#7 3A 7 21 , back gro und # 73A 7 2 1. T his de mo ns tra tes
+wo rd-spaci ng a nd le tte r-s paci ng -->
+
+
+    <p     id="a7" >
+        This is a sample paragraph demonstrating border color #73A721, background #73A721. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+
+    <!-- T a s k 8 : S a m p l e o u t p u t s h o w i n g b o r d e r c o l o r
+# A 8 0 8 B 8 , b a c k g r o u n d # A 8 0 8 B 8 . T h i s d e m o n s t r a t e s
+w o r d - s p a c i n g a n d l e t t e r - s p a c i n g -->
+
+    <p     id="a8">
+        This is a sample paragraph demonstrating border color #A808B8, background #A808B8. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+<hr>
+
+<!-- Task 9: Sample output showing border color #DD694F, background
+#DD694F. This demonstrates word-spacing and letter-spacing. -->
+
+    <p     id="a9">
+        This is a sample paragraph demonstrating border color #DD694F, background #DD694F. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+
+    <!-- Task 10: V
+E
+R
+T
+I
+C
+A
+L (vertical approximation)
+Sample shows other properties below. -->
+    <p     id="a10">
+        VERTICAL
+    </p>
+
+    <hr>
+
+    <!-- T a s k 1 1 : S a m p l e o u t p u t s h o w i n g b o r d e r
+c o l o r # 4 7 2 B 7 D , b a c k g r o u n d # 4 7 2 B 7 D . T h i s
+d e m o n s t r a t e s w o r d - s p a c i n g a n d l e t t e r -
+s p a c i n g . -->
+    <p     id="a11">
+        This is a sample paragraph demonstrating border color #472B7D, background #472B7D. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+
+    <!-- Task 12: Sample output showing border color #7C8C14, background
+#7C8C14. This demonstrates word-spacing and letter-spacing. -->
+
+    <p     id="a12">
+        This is a sample paragraph demonstrating border color #7C8C14, background #7C8C14. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+
+   <!-- Tas k 1 3: Sa m ple o utput s ho wing border colo r #B1 EDAB ,
+bac kg ro und #B 1 EDAB. T his de mo nstr ates wo r d -s paci ng and
+le tter-s paci ng. -->
+    <p     id="a13">
+        This is a sample paragraph demonstrating border color #B1EDAB, background #B1EDAB. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+
+   <!-- T a s k 1 4 : S a m p l e o u t p u t s h o w i n g b o r d e r c o l o r
+# E 6 4 E 4 2 , b a c k g r o u n d # E 6 4 E 4 2 . T h i s
+d e m o n s t r a t e s w o r d - s p a c i n g a n d l e t t e r - s p a c i n g . -->
+
+    <p     id="a14">
+        This is a sample paragraph demonstrating border color #E64E42, background #E64E42. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+
+    <!-- Task 15: Sample output showing border color #1BAFD9,
+background #1BAFD9. This demonstrates word-spacing and letterspacing -->
+
+    <p     id="a15">
+        This is a sample paragraph demonstrating border color #1BAFD9, background #1BAFD9. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+
+   <!-- Tas k 1 6: Sa m ple o utput s ho wing border colo r #5 0 1 0 70 ,
+bac kg ro und # 5 0 1 0 70. T his demo ns tr ates wo r d -s paci ng and
+le tter-s paci ng. -->
+    <p     id="a16">
+        This is a sample paragraph demonstrating border color #501070, background #501070. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+    <!-- T a s k 1 7 : S a m p l e o u t p u t s h o w i n g b o r d e r c o l o r
+# 8 5 7 1 0 7 , b a c k g r o u n d # 8 5 7 1 0 7 . T h i s d e m o n s t r a t e s
+w o r d - s p a c i n g a n d l e t t e r - s p a c i n g . -->
+
+    <p     id="a17">
+        This is a sample paragraph demonstrating border color #857107, background #857107. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+    <!--Task 18: Sample output showing border color #BAD29E, background
+#BAD29E. This demonstrates word-spacing and letter-spacing. -->
+
+    <p     id="a18">
+        This is a sample paragraph demonstrating border color #BAD29E, background #BAD29E. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+
+    <!-- Tas k 1 9: Sa m pl e o utput sho wi ng bo r de r co lor
+#EF 3 3 35 , bac k gro und #E F3 3 3 5. This demo ns tra tes
+wo rd-spaci ng a nd le tte r-s paci ng. -->
+
+    <p     id="a19">
+        This is a sample paragraph demonstrating border color #EF3335, background #EF3335. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+
+    <!-- Task 20: V
+E
+R
+T
+I
+C
+A
+L (vertical approximation)
+Sample shows other properties below -->
+
+    <p     id="a20">
+        vertical
+    </p>
+    <hr>
+    <!-- Task 21: Sample output showing border color #59F563, background
+#59F563. This demonstrates word-spacing and letter-spacing.
+ -->
+
+    <p     id="a21">
+        This is a sample paragraph demonstrating border color #59F563, background #59F563. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+
+ <!-- Tas k 2 2: Sa m pl e o utput s ho wi ng bo r de r colo r # 8 E5 6FA ,
+bac kg ro und # 8E 5 6FA. This de mo ns tr ates wo r d -s pac i ng
+and l e tter-s pac i ng. -->
+
+    <p     id="a22">
+        This is a sample paragraph demonstrating border color #8E56FA, background #8E56FA. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+
+<!-- T a s k 2 3 : S a m p l e o u t p u t s h o w i n g b o r d e r
+c o l o r # C 3 B 7 9 1 , b a c k g r o u n d # C 3 B 7 9 1 . T h i s
+d e m o n s t r a t e s w o r d - s p a c i n g a n d l e t t e r -
+s p a c i n g . -->
+
+
+    <p     id="a23">
+        This is a sample paragraph demonstrating border color #C3B791, background #C3B791. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+
+<!-- Task 24: Sample output showing border color #F81828, background
+#F81828. This demonstrates word-spacing and letter-spacing. -->
+
+    <p     id="a24">
+        This is a sample paragraph demonstrating border color #F81828, background #F81828. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+    <!-- Tas k 2 5: Sa m ple o utput s ho wing border colo r #2 D7 9BF ,
+bac kg ro und # 2D 7 9BF. T his de mo nstr ates wo r d -s paci ng and
+le tter-s paci ng -->
+
+    <p     id="a25">
+        This is a sample paragraph demonstrating border color #2D79BF, background #2D79BF. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+
+<!-- T a s k 2 6 : S a m p l e o u t p u t s h o w i n g b o r d e r c o l o r
+# 6 2 D A 5 6 , b a c k g r o u n d # 6 2 D A 5 6 . T h i s
+d e m o n s t r a t e s w o r d - s p a c i n g a n d l e t t e r - s p a c i n g . -->
+
+    <p     id="a26">
+        This is a sample paragraph demonstrating border color #62DA56, background #62DA56. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+
+    <!-- Task 27: Sample output showing border color #973BED,
+background #973BED. This demonstrates word-spacing and letterspacing. -->
+
+    <p     id="a27">
+        This is a sample paragraph demonstrating border color #973BED, background #973BED. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+
+    <!-- Tas k 2 8: Sa m ple o utput s ho wing border colo r #CC 9C 8 4 ,
+bac kg ro und # CC 9C 8 4. T his de mo nstr ates wo r d -s paci ng and
+le tter-s paci ng. -->
+    <p     id="a28">
+        This is a sample paragraph demonstrating border color #CC9C84, background #CC9C84. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+
+    <!-- T a s k 2 9 : S a m p l e o u t p u t s h o w i n g b o r d e r c o l o r
+# 0 1 F D 1 B , b a c k g r o u n d # 0 1 F D 1 B . T h i s d e m o n s t r a t e s
+w o r d - s p a c i n g a n d l e t t e r - s p a c i n g . -->
+
+    <p     id="a29">
+        This is a sample paragraph demonstrating border color #01FD1B, background #01FD1B. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+
+<!-- Task 30: V
+E
+R
+T
+I
+C
+A
+L -->
+
+    <p     id="a30">
+        Vertical
+    </p>
+
+    <hr>
+
+    <!-- Tas k 3 1: Sa m pl e o utput sho wi ng bo r de r co lor
+#6BBF 4 9 , bac kg ro und # 6BBF 4 9. T his de mo ns tra tes
+wo rd-spaci ng a nd le tte r-s paci ng. -->
+
+    <p     id="a31">
+        This is a sample paragraph demonstrating border color #6BBF49, background #6BBF49. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+
+    <!-- T a s k 3 2 : S a m p l e o u t p u t s h o w i n g b o r d e r c o l o r
+# A 0 2 0 E 0 , b a c k g r o u n d # A 0 2 0 E 0 . T h i s d e m o n s t r a t e s
+w o r d - s p a c i n g a n d l e t t e r - s p a c i n g . -->
+
+    <p     id="a32">
+        This is a sample paragraph demonstrating border color #A020E0, background #A020E0. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+    <hr>
+
+
+    <!--Task 33: Sample output showing border color #D58177, background
+#D58177. This demonstrates word-spacing and letter-spacing.  -->
+
+ <p     id="a33">
+        This is a sample paragraph demonstrating border color #A020E0, background #A020E0. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+
+<hr>
+<!-- Tas k 3 4: Sa m pl e o utput s ho wi ng bo r de r colo r # 0A E2 0 E ,
+bac kg ro und # 0AE 2 0 E. T his de mo ns tr ates wo r d -s pac i ng
+and l e tter-s pac i ng. -->
+
+<p     id="a34">
+        This is a sample paragraph demonstrating border color #0AE20E, background #0AE20E. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+<hr>
+<!-- T a s k 3 5 : S a m p l e o u t p u t s h o w i n g b o r d e r
+c o l o r # 3 F 4 3 A 5 , b a c k g r o u n d # 3 F 4 3 A 5 . T h i s
+d e m o n s t r a t e s w o r d - s p a c i n g a n d l e t t e r -
+s p a c i n g . -->
+
+<p     id="a35">
+        This is a sample paragraph demonstrating border color #3F43A5, background #3F43A5. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+<hr>
+
+<!-- Task 36: Sample output showing border color #74A43C, background
+#74A43C. This demonstrates word-spacing and letter-spacing. -->
+
+<p     id="a36">
+        This is a sample paragraph demonstrating border color #74A43C, background #74A43C. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+<hr>
+
+<!-- Tas k 3 7: Sa m ple o utput s ho wing border colo r #A9 0 5D 3 ,
+bac kg ro und #A 9 0 5D 3. T his de mo nstr ates wo r d-s paci ng and
+le tter-s paci ng. -->
+
+<p     id="a37">
+        This is a sample paragraph demonstrating border color #A905D3, background #A905D3. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+<hr>
+
+<!-- T a s k 3 8 : S a m p l e o u t p u t s h o w i n g b o r d e r c o l o r
+# D E 6 6 6 A , b a c k g r o u n d # D E 6 6 6 A . T h i s
+d e m o n s t r a t e s w o r d - s p a c i n g a n d l e t t e r - s p a c i n g . -->
+
+<p     id="a38">
+        This is a sample paragraph demonstrating border color #DE666A, background #DE666A. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+<hr>
+
+<!-- Task 39: Sample output showing border color #13C701,
+background #13C701. This demonstrates word-spacing and letterspacing -->
+
+<p     id="a39"  >
+        This is a sample paragraph demonstrating border color #13C701, background #13C701. This demo nstrates word-spacing and letter-spacing.
+    </p>
+
+<hr>
+<!-- Task 40: V
+E
+R
+T
+I
+C
+A
+L (vertical approximation)
+Sample shows other properties below. -->
+
+
+<p     id="a40">
+        Vertical
+    </p>
+
+
+</body>
+
+</html>
